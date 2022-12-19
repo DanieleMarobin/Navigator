@@ -14,10 +14,10 @@ st.set_page_config(page_title="Navigator",layout="wide",initial_sidebar_state="e
 st.markdown("# Navigator")
 st.markdown("---")
 
-link='Trade Radar: [Trade Radar](https://danielemarobin-tradeflow-home-edl64h.streamlit.app/)'
+link='Trade Radar: [Trade Radar](https://danielemarobin-traderadar-home.streamlit.app/)'
 st.markdown(link)
 
-link='Trade Flow: [Trade Flow](https://danielemarobin-tradeflow-home-edl64h.streamlit.app/)'
+link='Trade Flow: [Trade Flow](https://danielemarobin-tradeflow-home.streamlit.app/)'
 st.markdown(link)
 
 st.sidebar.markdown("# Navigator")
