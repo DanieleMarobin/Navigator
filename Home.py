@@ -20,7 +20,7 @@ st.markdown(link)
 link='Trade Flow: [Trade Flow](https://danielemarobin-tradeflow-home.streamlit.app/)'
 st.markdown(link)
 
-link='Safra Corn Yield Model: [Trade Flow](https://danielemarobin-brasafracornyieldmodel-home.streamlit.app/)'
+link='Safra Corn Yield Model: [Safra Corn Yield Model](https://danielemarobin-brasafracornyieldmodel-home.streamlit.app/)'
 st.markdown(link)
 
 # st.sidebar.markdown("# Navigator")
