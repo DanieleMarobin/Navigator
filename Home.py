@@ -17,6 +17,9 @@ st.markdown("---")
 link='Trade Radar: [Trade Radar](https://danielemarobin-traderadar-home.streamlit.app/)'
 st.markdown(link)
 
+link='Price Models: [Price Models](https://danielemarobin-pricemodels-home.streamlit.app/)'
+st.markdown(link)
+
 link='Trade Flow: [Trade Flow](https://danielemarobin-tradeflow-home.streamlit.app/)'
 st.markdown(link)
 
