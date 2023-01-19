@@ -20,10 +20,13 @@ st.markdown(link)
 link='Price Models: [Price Models](https://danielemarobin-pricemodels-home.streamlit.app/)'
 st.markdown(link)
 
-link='Trade Flow: [Trade Flow](https://danielemarobin-tradeflow-home.streamlit.app/)'
+link='Wheat Crop Conditions: [Wheat Crop Conditions](https://danielemarobin-cropprogress-home.streamlit.app/)'
 st.markdown(link)
 
-link='Safra Corn Yield Model: [Safra Corn Yield Model](https://danielemarobin-brasafracornyieldmodel-home.streamlit.app/)'
-st.markdown(link)
+# link='Trade Flow: [Trade Flow](https://danielemarobin-tradeflow-home.streamlit.app/)'
+# st.markdown(link)
+
+# link='Safra Corn Yield Model: [Safra Corn Yield Model](https://danielemarobin-brasafracornyieldmodel-home.streamlit.app/)'
+# st.markdown(link)
 
 # st.sidebar.markdown("# Navigator")
