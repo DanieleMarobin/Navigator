@@ -20,7 +20,7 @@ st.markdown(link)
 link='Price Models: [Price Models](https://danielemarobin-pricemodels-home.streamlit.app/)'
 st.markdown(link)
 
-link='Wheat Crop Conditions: [Wheat Crop Conditions](https://danielemarobin-cropprogress-home.streamlit.app/)'
+link='Crop Progress and Conditions: [Crop Progress and Conditions](https://danielemarobin-cropprogress-home.streamlit.app/)'
 st.markdown(link)
 
 # link='Trade Flow: [Trade Flow](https://danielemarobin-tradeflow-home.streamlit.app/)'
