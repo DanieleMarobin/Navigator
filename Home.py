@@ -115,6 +115,7 @@ if True:
             with st.expander(f'{project} Roadmap'):
                 st.markdown(roadmap)
 
+
 st.markdown("---")
 st.markdown("### Crops")
 if True:    
@@ -137,11 +138,24 @@ if True:
                 st.markdown(roadmap)
 
 
-# link='* Crop Progress and Conditions: [Crop Progress and Conditions](https://danielemarobin-cropprogress-home.streamlit.app/)'
-# st.markdown(link)
+st.markdown("---")
+st.markdown("### Acreage")
+if True:    
+    project = 'US Acreage '
+    if True:    
+        col1,col2 = st.columns(cols_size)
 
-# link='Trade Flow: [Trade Flow](https://danielemarobin-tradeflow-home.streamlit.app/)'
-# st.markdown(link)
+        link=f'''* {project} coming soon...'''
+        roadmap='''
+        * :green[Done this week]:
+            * Defined project and project deadline
+        * :red[To Do]:
+            * create model and provide estimate
+        '''
+        with col1:
+            st.markdown(link)
 
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)
 
-# st.sidebar.markdown("# Navigator")
