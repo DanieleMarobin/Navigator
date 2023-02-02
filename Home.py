@@ -101,7 +101,7 @@ if True:
     if True:    
         col1,col2 = st.columns(cols_size)
 
-        link=f'''* {project} coming soon...'''
+        link=f'''* [{project}](https://danielemarobin-brasafrinacornyieldmodel-home.streamlit.app/)'''
         roadmap='''
         * :green[Done this week]:
             * Made sure that the data pipeline runs smooth (hist weather, GFS and ECMWF both operational and ensemble)
