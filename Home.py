@@ -11,48 +11,134 @@ import streamlit as st
 
 st.set_page_config(page_title="Navigator",layout="wide",initial_sidebar_state="expanded")
 
+cols_size=[1,5]
 st.markdown("# Navigator")
 
 st.markdown("---")
 st.markdown("### Price Analysis")
+if True:
+    project = 'Seasonals'
+    if True:    
+        col1,col2 = st.columns(cols_size)
 
-link='''Seasonals: [Seasonals](https://danielemarobin-seasonals-home.streamlit.app/)'''
-roadmap='''
-* :green[Done]:
-    * Added controls on forward onth range and past years
-    * Made sure that the seasonal never goes further than First Notice Day
-* :red[To Do]:
-    * Visualize and Analyse fund roll
-    * Add statistics at the bottom
-    * Easily select successful and unsuccessful years        
-'''
-st.markdown(link)
+        link=f'''* [{project}](https://danielemarobin-seasonals-home.streamlit.app/)'''
+        roadmap='''
+        * :green[Done this week]:
+            * Added controls on forward onth range and past years
+            * Made sure that the seasonal never goes further than First Notice Day
+        * :red[To Do]:
+            * Visualize and Analyse fund roll
+            * Add statistics at the bottom
+            * Easily select successful and unsuccessful years        
+        '''
+        with col1:
+            st.markdown(link)
 
-with st.expander('Seasonals Roadmap'):
-    st.markdown(roadmap)
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)
 
-link='* Trade Radar: [Trade Radar](https://danielemarobin-traderadar-home.streamlit.app/)'
-st.markdown(link)
+    project = 'Trade Radar'
+    if True:    
+        col1,col2 = st.columns(cols_size)
 
-link='* Price Models: [Price Models](https://danielemarobin-pricemodels-home.streamlit.app/)'
-st.markdown(link)
+        link=f'''* [{project}](https://danielemarobin-traderadar-home.streamlit.app/)'''
+        roadmap='''
+        * :green[Done this week]:
+            * No recent changes
+        * :red[To Do]:
+            * Put filters on Price percentile    
+        '''
+        with col1:
+            st.markdown(link)
+
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)
+
+    project = 'Price Models'
+    if True:    
+        col1,col2 = st.columns(cols_size)
+
+        link=f'''* [{project}](https://danielemarobin-pricemodels-home.streamlit.app/)'''
+        roadmap='''
+        * :green[Done this week]:
+            * No recent changes
+        * :red[To Do]:
+            * Change the way the variables are calculated (to better reflect the seasonals calculation)
+        '''
+        with col1:
+            st.markdown(link)
+
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)
 
 
 st.markdown("---")
 st.markdown("### Yield Models")
+if True:    
+    project = 'BRA Safra Corn'
+    if True:    
+        col1,col2 = st.columns(cols_size)
 
-link='* Safra Corn (BRA): [Safra Corn (BRA)](https://danielemarobin-brasafracornyieldmodel-home.streamlit.app/)'
-st.markdown(link)
+        link=f'''* [{project}](https://danielemarobin-brasafracornyieldmodel-home.streamlit.app/)'''
+        roadmap='''
+        * :green[Done this week]:
+            * No recent changes
+        * :red[To Do]:
+            * Keep it updated with development in other crops yield models
+        '''
+        with col1:
+            st.markdown(link)
 
-link='* Safrina Corn (BRA): Coming Soon... (I need to rework it, to harmonize it with all the other genetic algo ones)'
-st.markdown(link)
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)
 
+    project = 'BRA Safrina Corn'
+    if True:    
+        col1,col2 = st.columns(cols_size)
+
+        link=f'''* {project} coming soon...'''
+        roadmap='''
+        * :green[Done this week]:
+            * Made sure that the data pipeline runs smooth (hist weather, GFS and ECMWF both operational and ensemble)
+            * Calculated and checked that the yearly national yield calculaion matches the CONAB one
+        * :red[To Do]:
+            * Select the final moodel and keep it up and running at every weather run
+        '''
+        with col1:
+            st.markdown(link)
+
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)
 
 st.markdown("---")
 st.markdown("### Crops")
+if True:    
+    project = 'Crop Progress and Conditions'
+    if True:    
+        col1,col2 = st.columns(cols_size)
 
-link='* Crop Progress and Conditions: [Crop Progress and Conditions](https://danielemarobin-cropprogress-home.streamlit.app/)'
-st.markdown(link)
+        link=f'''* [{project}](https://danielemarobin-cropprogress-home.streamlit.app/)'''
+        roadmap='''
+        * :green[Done this week]:
+            * No recent changes
+        * :red[To Do]:
+            * Evaluate R-squared of the simple 'delta condition vs delta yield' model from the beginning of the season till the end, to understand when the model starts to become significant
+        '''
+        with col1:
+            st.markdown(link)
+
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)
+
+
+# link='* Crop Progress and Conditions: [Crop Progress and Conditions](https://danielemarobin-cropprogress-home.streamlit.app/)'
+# st.markdown(link)
 
 # link='Trade Flow: [Trade Flow](https://danielemarobin-tradeflow-home.streamlit.app/)'
 # st.markdown(link)
