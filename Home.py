@@ -65,6 +65,7 @@ if True:
         * :green[Done this week]:
             * No recent changes
         * :red[To Do]:
+            * Fix an issue that arises in the heatmap when some months are excluded from the analysis
             * Change the way the variables are calculated (to better reflect the seasonals calculation)
         '''
         with col1:
