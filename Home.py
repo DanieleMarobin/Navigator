@@ -16,8 +16,20 @@ st.markdown("# Navigator")
 st.markdown("---")
 st.markdown("### Price Analysis")
 
-link='* Seasonals: [Seasonals](https://danielemarobin-seasonals-home.streamlit.app/)'
+link='''Seasonals: [Seasonals](https://danielemarobin-seasonals-home.streamlit.app/)'''
+roadmap='''
+* :green[Done]:
+    * Added controls on forward onth range and past years
+    * Made sure that the seasonal never goes further than First Notice Day
+* :red[To Do]:
+    * Visualize and Analyse fund roll
+    * Add statistics at the bottom
+    * Easily select successful and unsuccessful years        
+'''
 st.markdown(link)
+
+with st.expander('Seasonals Roadmap'):
+    st.markdown(roadmap)
 
 link='* Trade Radar: [Trade Radar](https://danielemarobin-traderadar-home.streamlit.app/)'
 st.markdown(link)
