@@ -142,7 +142,7 @@ if True:
 st.markdown("---")
 st.markdown("### Acreage")
 if True:    
-    project = 'US Acreage '
+    project = 'US Acreage'
     if True:    
         col1,col2 = st.columns(cols_size)
 
@@ -151,7 +151,7 @@ if True:
         * :green[Done this week]:
             * Defined project and project deadline
         * :red[To Do]:
-            * create model and provide estimate
+            * Create model and provide estimate
         '''
         with col1:
             st.markdown(link)
@@ -160,3 +160,50 @@ if True:
             with st.expander(f'{project} Roadmap'):
                 st.markdown(roadmap)
 
+
+st.markdown("---")
+st.markdown("### US Corn Quarterly Stocks Estimate (F&R Model)")
+if True:    
+    project = 'US Quarterly Stocks Estimate'
+    if True:    
+        col1,col2 = st.columns(cols_size)
+
+        link=f'''* {project} coming soon...'''
+        roadmap='''
+        * :green[Done]:
+            * Created the forecast model
+        * :red[To Do]:
+            * Make the model estimate easily accessible from this platform
+        '''
+        with col1:
+            st.markdown(link)
+
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)
+
+
+st.markdown("---")
+st.markdown("### Satellite Imagery Analysis")
+if True:    
+    project = 'Satellite Imagery Analysis'
+    if True:    
+        col1,col2 = st.columns(cols_size)
+
+        link=f'''* {project} coming soon...'''
+        roadmap='''
+        * :green[Done]:
+            * Created a simple tool to download all satellite images for a certain period and area based on different criteria
+            * Created a classification model that given as input a series of satellite pictures, classifies the crop
+            * Unfortunately the above model can only be applied to small areas (due to the limits that Google Earth has in place)
+        * :red[To Do]:
+            * Make the above intermediate results and analysis available to everyone for brainstorming and ideas generation
+            * Find a way to overcome the current data and computation limitation
+            * Create a simple model for planting progress (based on the difference between images taken days apart)
+        '''
+        with col1:
+            st.markdown(link)
+
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)                
