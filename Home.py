@@ -78,7 +78,26 @@ if True:
 
 st.markdown("---")
 st.markdown("### Yield Models")
-if True:    
+if True:  
+    # danielemarobin-argcornyieldmodel
+    project = 'ARG Corn Yield'
+    if True:    
+        col1,col2 = st.columns(cols_size)
+
+        link=f'''* [{project}](https://danielemarobin-argcornyieldmodel-home.streamlit.app/)'''
+        roadmap='''
+        * :green[Done this week]:
+            * Created the full Model
+        * :red[To Do]:
+            * Get a better model (as this one, is giving some crazy low yield number)
+        '''
+        with col1:
+            st.markdown(link)
+
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)
+
     project = 'BRA Safra Corn'
     if True:    
         col1,col2 = st.columns(cols_size)
