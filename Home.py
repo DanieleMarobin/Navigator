@@ -28,8 +28,6 @@ if True:
             * Made sure that the seasonal never goes further than First Notice Day
         * :red[To Do]:
             * Visualize and Analyse fund roll
-            * Add statistics at the bottom
-            * Easily select successful and unsuccessful years        
         '''
         with col1:
             st.markdown(link)
