@@ -15,6 +15,27 @@ cols_size=[1,5]
 st.markdown("# Navigator")
 
 st.markdown("---")
+st.markdown("### Weather")
+if True:
+    project = 'Weather'
+    if True:    
+        col1,col2 = st.columns(cols_size)
+
+        link=f'''* [{project}](https://danielemarobin-weather-home.streamlit.app/)'''
+        roadmap='''
+        * :green[Done this week]:
+            * All done
+        * :red[To Do]:
+            * Adding other countries
+        '''
+        with col1:
+            st.markdown(link)
+
+        with col2:
+            with st.expander(f'{project} Roadmap'):
+                st.markdown(roadmap)
+
+st.markdown("---")
 st.markdown("### Price Analysis")
 if True:
     project = 'Seasonals'
